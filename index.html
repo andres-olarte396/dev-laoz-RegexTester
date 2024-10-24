@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tester de Expresiones Regulares</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+    <h1>Expresiones Regulares Tester</h1>
+    
+    <div class="regex-tester">
+        <label for="regex">Escribe una expresión regular:</label>
+        <input type="text" id="regex" placeholder="Ej: \d{3}-\d{2}-\d{4}">
+        
+        <label for="text">Texto a probar:</label>
+        <textarea id="text" rows="5" placeholder="Escribe el texto aquí..."></textarea>
+
+        <button onclick="testRegex()">Probar</button>
+
+        <div id="result" class="result"></div>
+        <div id="matches" class="result"></div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
