@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tester de Expresiones Regulares</title>
     <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-
-    <h1>Expresiones Regulares Tester</h1>
-    
-    <div class="regex-tester">
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/theme.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/base.css" />
+    <link rel="stylesheet" href="../dev-laoz-WaveArtCSS/src/components.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Expresiones Regulares Tester</h1>
+      <p>
+        Este proyecto es una herramienta web para escribir, probar y verificar expresiones regulares. Es ideal para quienes trabajan con validaciones y patrones de búsqueda, y necesitan ajustar las expresiones regulares de manera interactiva.
+      </p>
+    </header>
+    <main>
+      <div class="regex-tester">
         <label for="regex">Escribe una expresión regular:</label>
-        <input type="text" id="regex" placeholder="Ej: \d{3}-\d{2}-\d{4}">
-        
+        <input type="text" id="regex" placeholder="Ej: \d{3}-\d{2}-\d{4}" />
+
         <label for="text">Texto a probar:</label>
-        <textarea id="text" rows="5" placeholder="Escribe el texto aquí..."></textarea>
+        <textarea
+          id="text"
+          rows="5"
+          placeholder="Escribe el texto aquí..."
+        ></textarea>
 
         <button onclick="testRegex()">Probar</button>
 
         <div id="result" class="result"></div>
         <div id="matches" class="result"></div>
-    </div>
-    <script src="script.js"></script>
+      </div>
+    </main>
+    <footer>
+      <p>© 2024 Mi Negocio. Todos los derechos reservados.</p>
+    </footer>
 
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
