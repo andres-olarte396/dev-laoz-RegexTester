@@ -17,26 +17,41 @@
   <body>
     <header>
       <h1>Expresiones Regulares Tester</h1>
-      <p>
-        Este proyecto es una herramienta web para escribir, probar y verificar expresiones regulares. Es ideal para quienes trabajan con validaciones y patrones de búsqueda, y necesitan ajustar las expresiones regulares de manera interactiva.
-      </p>
     </header>
     <main>
-      <div class="regex-tester">
-        <label for="regex">Escribe una expresión regular:</label>
-        <input type="text" id="regex" placeholder="Ej: \d{3}-\d{2}-\d{4}" />
-
-        <label for="text">Texto a probar:</label>
-        <textarea
-          id="text"
-          rows="5"
-          placeholder="Escribe el texto aquí..."
-        ></textarea>
-
-        <button onclick="testRegex()">Probar</button>
-
-        <div id="result" class="result"></div>
-        <div id="matches" class="result"></div>
+      <div class="container">
+        <fieldset>
+          <legend>Expresiones Regulares</legend>
+          <p>
+            Las expresiones regulares son patrones de búsqueda que se utilizan
+            para encontrar coincidencias en cadenas de texto. Son muy útiles
+            para validar datos, extraer información y realizar búsquedas
+            avanzadas.
+          </p>
+          <p>
+            En JavaScript, las expresiones regulares se crean con la clase
+            RegExp o con el literal /pattern/. Para probar una expresión
+            regular, se utiliza el método test() de la clase RegExp o el método
+            match() de las cadenas de texto.
+          </p>
+          <p>
+            En esta herramienta, puedes escribir una expresión regular en el
+            campo de texto y probarla con un texto de ejemplo. La herramienta te
+            mostrará si la expresión regular coincide con el texto y resaltará
+            las coincidencias encontradas.
+          </p>
+          <label for="regex">Escribe una expresión regular:</label>
+          <input type="text" id="regex" placeholder="Ej: \d{3}-\d{2}-\d{4}" />
+          <label for="text">Texto a probar:</label>
+          <textarea
+            id="text"
+            rows="5"
+            placeholder="Escribe el texto aquí..."
+          ></textarea>
+          <button onclick="testRegex()">Probar</button>
+          <div id="result" class="result"></div>
+          <div id="matches" class="result"></div>
+        </fieldset>
       </div>
     </main>
     <footer>
